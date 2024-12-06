@@ -1,0 +1,81 @@
+{% extends 'home.html' %}
+
+<body class="contact-page">
+
+  <main class="main">
+
+
+
+    <!-- Contact Section -->
+    {% block content %}
+    <section id="contact" class="contact section">
+      
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>7 okporo lane Elelenwo Port-Harcourt, Rivers State, Nigeria.</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+234 07078774666</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p>rhexmilia06@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://x.com/rh_exxie" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://web.facebook.com/rexdavid4" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/rh_e_x/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/rex-david-buchi-54493a241/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/RexDavid06"><i class="bi bi-github"></i></a>
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+          {% csrf_token %}
+          {{forms.as_p}}
+            <button class="btn btn-success">Submit</button>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'home.html'%}
+
+<body class="services-page">
+
+  <main class="main">
+
+    {% block content%}
+    <section id="services" class="services section">
+      <div class="container">
+       
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="" target="_blank">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+  
+              <h3>An Authentication System</h3>
+              <p>I borrowed most of the templates from bootstrap, did URL mapping and added
+                an authentication system to verify users giving them access to their dashboard...
+                I'm yet to update the dashboard, but it's an upcoming task.</p>
+            </div>
+          </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="" target="_blank">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+                <h3>A RESTAPI</h3>
+                <p>I built an API that has an efficient CRUD functionality </p>
+            </div>
+          </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <a href="" target="_blank">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <h3>A To-Do Application</h3>
+              <p>This application firstly, has an authentication and restriction system that helps for proper functionalites for our users, 
+                like logged in users not been able to view the register and login pages, unregistered users not been able to have access to 
+                any other page except the login , signup and index page</p>
+            </div>
+          </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <a href="" target="_blank">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+                <h3>A Blog Application</h3>
+                <p>This application has an effient authentication system also giving the user ability to make, edit and delete their post.
+                  A user dont' have access to update or delete another users post</p>
+            </div>
+          </a>
+          </div><!-- End Service Item -->
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+{% endblock %}
+

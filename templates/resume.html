@@ -1,0 +1,71 @@
+{% extends 'home.html'%}
+
+<body class="resume-page">
+{% block content %}
+  <main class="main">
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="col-lg-8">
+        <h1>Sumary</h1>
+        <p class="mb-0">  <a href="{% url 'download_resume'%}" target="_blank" class="cta">Download Resume</a></p>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title"></h3>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Engineering</h4>
+              <P> Mechanical Engineering</P>
+              <h5>2017 - 2022</h5>
+              <p><em>Madonna University ENUGU, NIGERIA</em></p>
+              <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4> Python Developer</h4>
+              <P>Certified Python Developer</P>
+              <h5>2024</h5>
+              <p><em>UDEMY</em></p>
+
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Mechanical Engineering Intern</h4>
+              <h5>JULY-SEPT 2024</h5>
+              <p><em>Poseidon Energy Services, Nigeria </em></p>
+            
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Freelancer</h4>
+              <h5>2024</h5>
+              <p><em>Web Developer</em></p>
+              <ul>
+                
+                <li>API Design and Development</li>
+                <li>Cloud Integration and Deployment</li>
+                <li>Server-Side Logic</li>
+                <li>Security and Authentication</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  {% endblock %}

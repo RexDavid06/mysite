@@ -1,0 +1,76 @@
+{% extends 'home.html'%}
+
+<body class="services-page">
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    {% block content%}
+    <section id="services" class="services section">
+      <div class="container">
+       
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <h3>API Design and Development</h3>
+              <p>Designing, Utilizing and implementing scalable, secure and efficient APIs for web applications.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+                <h3>Server-Side Logic</h3>
+                <p>Develop server-side logic for web applications using Python|Django  </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <h3>Security and Authentication</h3>
+              <p>Implement secure authentication and authorization mechanisms for web applications</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+                <h3>Cloud Integration and Deployment</h3>
+                <p>Deploy applications on AWS cloud platform</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+{% endblock %}
+
